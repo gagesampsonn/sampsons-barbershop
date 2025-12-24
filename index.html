@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sampson's Barbershop - Traditional cuts, modern style. Located in Wheelersburg, Ohio. Haircuts $15, Beard Trims $8, Senior Haircuts $12." />
+    <title>Sampson's Barbershop | Wheelersburg, Ohio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      body { 
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+      }
+      
+      /* Premium Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0A0A14;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1A1A2E;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2A2A4E;
+      }
+      
+      /* Glass Panel Effect */
+      .glass-panel {
+        background: linear-gradient(135deg, rgba(15, 16, 32, 0.8) 0%, rgba(10, 10, 20, 0.9) 100%);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(26, 26, 46, 0.8);
+      }
+      
+      /* Text Gradient */
+      .text-gradient-red {
+        background: linear-gradient(135deg, #C41E3A 0%, #E8304F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .text-gradient-blue {
+        background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      /* Selection */
+      ::selection {
+        background: rgba(196, 30, 58, 0.3);
+        color: #F5F5F5;
+      }
+      
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-barber-bg text-text-primary antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
